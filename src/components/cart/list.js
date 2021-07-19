@@ -6,7 +6,7 @@ function List ({data}){
 				{ 
 					data.map((item, index) => { //getting details from cart.js
 						return (
-							<li className="list" key={index}><span className="fa-li"><i className="fas fa-check"></i></span>{item}</li>
+							<li key={index}><span className="fa-li"><i className="fas fa-check"></i></span>{item}</li>
 						)
 					})
 				}

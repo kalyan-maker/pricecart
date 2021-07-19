@@ -4,6 +4,9 @@ import NonList from "./list1"
 import './card.css';
 
 function Card({ title, price, priceper, currency, features, nofeatures }) { //getting details from app.js
+    function getuser(){
+        console.log("Submit")
+    }
     return (
     <>
         <section className="pricing py-5">
@@ -20,7 +23,7 @@ function Card({ title, price, priceper, currency, features, nofeatures }) { //ge
                             <List data = {features} /> {/*import list from list.js */}
                             <NonList data1 = {nofeatures} /> {/*import nonlist from nonlist.js */}
                             </ul>
-                            <a href="#" className="btn btn-block btn-primary text-uppercase">Button</a>
+                            <a href="#top" onClick={getuser} className="btn btn-block btn-primary text-uppercase">Button</a>
                             </div>
                         </div>
                         </div>
