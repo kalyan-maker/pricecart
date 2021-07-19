@@ -1,7 +1,7 @@
 import React from "react";
 import List from './list';
 import NonList from "./list1"
-// import './card.css';
+
 
 function Card({ title, price, priceper, currency, features, nofeatures }) { //getting details from app.js
     function getuser(){
