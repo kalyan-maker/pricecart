@@ -31,7 +31,32 @@ section.pricing {
 }
 
 .pricing ul li {
+  list-style-type: none;
+  color: black;
   margin-bottom: 1rem;
+}
+
+
+
+.pricing ul li::before{
+  color: soild black;
+	content: "✓";
+	display: inline-block;
+	font-family: 'ionicons';
+	margin-left: -36px;
+	width: 36px; 
+}
+
+.pricing ul .card-features1 li {
+  list-style-type: none;
+}
+
+.pricing ul .card-features1 li::before{
+  display: inline-block;
+	font-family: 'ionicons';
+	margin-left: -36px;
+	width: 36px;
+  content: "✕";
 }
 
 .pricing .text-muted {
